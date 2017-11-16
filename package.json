@@ -1,0 +1,9 @@
+{
+  "name": "mwd-travel",
+  "version": "1.0.0",
+  "description": "Fictional travel agency website",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}
