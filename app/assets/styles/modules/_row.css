@@ -9,6 +9,10 @@
         margin-right: -100px;
     }
 
+    &--gutters-small {
+        margin-right: -45px;
+    }
+
     &--gutters > div {
         padding-right: 65px;
     }
@@ -17,8 +21,16 @@
         padding-right: 100px;
     }
 
+    &--gutters-small > div {
+        padding-right: 45px;
+    }
+
     &__b-margin-until-medium {
         margin-bottom: 1rem;
+    }
+
+    &--t-padding {
+        padding-top: 80px;
     }
 
     @mixin atMedium {
@@ -47,6 +59,36 @@
 
         &__b-margin-until-medium {
             margin-bottom: 0;
+        }
+    }
+
+    @mixin atLarge {
+        &__large-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /* Equal height rules with flexbox */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+        
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+    &--equal-height-at-large {
+        @mixin atLarge {
+            display: flex;
+        }
+        
+        & > div {
+            float: none;
+            display: flex;
         }
     }
 }
